@@ -31,6 +31,8 @@ Open http://127.0.0.1:8081. Ask “How is gross margin rate calculated?” or
 “How many below-floor lines are in the ledger?” Then inspect the source evidence.
 The default is a retrieved quotation, **not generated prose**.
 
+![Local finance copilot preview: cited evidence and contract exceptions](assets/demo.png)
+
 ```sh
 python -m unittest discover -s tests
 python evaluate.py --check

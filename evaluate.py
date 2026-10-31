@@ -43,7 +43,8 @@ def run(check=False):
     result={'protocol':'Authored synthetic corpus: 24 development cases select method/threshold; 24 separate test cases are evaluated after selection. No independent or live LLM quality benchmark.',
         'selected_config':selected,'development_candidates':candidates,'test':metrics(copilot,test),
         'bm25_test':metrics(Copilot({'method':'bm25','threshold':selected['threshold']}),test),
-        'source_sha256':{f:hashlib.sha256((ROOT/f).read_bytes()).hexdigest() for f in ['data/eval_cases.json','data/knowledge.json','data/synthetic_ledger.csv']},
+        'source_sha256':{f:hashlib.sha256((ROOT/f).read_text(encoding='utf-8').encode('utf-8')).hexdigest() for f in ['data/eval_cases.json','data/knowledge.json','data/synthetic_ledger.csv']},
+        'hash_normalization':'UTF-8 text with LF newlines; platform checkout line endings do not change provenance hashes.',
         'generation_evaluated':False,'limitations':'Source-ID relevance and extractive answers only. Small author-written cases; not independent validation. No claim of semantic faithfulness, production security or employer impact.'}
     path=ROOT/'evaluation/baseline.json'
     if check:

@@ -28,7 +28,7 @@ Metrics:
 - Unsupported abstention: fraction of unsupported questions with no answer.
 
 All results and per-question failures are in evaluation/baseline.json, together
-with source-file SHA-256 hashes. `evaluate.py --check` regenerates selection and
+with SHA-256 hashes of UTF-8 source text normalized to LF newlines. `evaluate.py --check` regenerates selection and
 metrics and compares them exactly to the committed baseline. Corpus or evaluation
 changes require an inspected baseline refresh, not an automatic success threshold
 reduction.

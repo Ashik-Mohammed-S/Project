@@ -870,10 +870,11 @@
     ]
   },
   "source_sha256": {
-    "data/eval_cases.json": "4d17ee406e2b44c54521c74798ca44c2f44f380331189dfb75a7acd1f333334c",
+    "data/eval_cases.json": "c65dfa5ba97a983bf0e7b161ebab529ca9c72b47ada211a785a1d107a744e99b",
     "data/knowledge.json": "8eccb39ff38e6594da9f9fb4d90eda9f46f94fcb4a6e4139a6f2f74e6f5ee736",
     "data/synthetic_ledger.csv": "ae3ff59323a31b41af0903f3f6bf4b06e44b4ca78fcdff67caf38aa2bfd71be0"
   },
+  "hash_normalization": "UTF-8 text with LF newlines; platform checkout line endings do not change provenance hashes.",
   "generation_evaluated": false,
   "limitations": "Source-ID relevance and extractive answers only. Small author-written cases; not independent validation. No claim of semantic faithfulness, production security or employer impact."
 }
