@@ -1,0 +1,12 @@
+{
+  "kind": "synthetic",
+  "generator": "generate_data.py",
+  "seed": 2027,
+  "row_count": 576,
+  "knowledge_documents": 12,
+  "generated_evidence_documents": 1,
+  "evaluation_cases": 48,
+  "source": "Author-created fictional Harbor Retail data and handbook. No external or employer data.",
+  "units": "Currency amounts are fictional integer cents.",
+  "employer_affiliation": "Independent personal portfolio; not built for, deployed at, or endorsed by Walgreens or TCS."
+}
